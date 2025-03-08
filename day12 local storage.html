@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="" onsubmit="handleSubmit(event)">
+    <input type="text" placeholder="Enter the name" id="na">
+    <input type="number" placeholder="Enter the number" id="nu">
+    <input type="email" placeholder="Emter the email" id="em">
+    <input type="submit">
+</form>
+<script>
+    function handleSubmit(event){
+        event.preventDefault(event);
+        let name =document.getElementById("na").value;
+        let number=document.getElementById("nu").value;
+        let email=document.getElementById("em").value;
+
+
+        localStorage.setItem("name",name);
+        localStorage.setItem("number",number);
+        localStorage.setItem("email",email);
+    }
+    
+</script>
+</body>
+</html>

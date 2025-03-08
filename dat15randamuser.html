@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Random user</h1>
+   
+    <div id="empty">
+
+    </div>
+    <script>
+        async function getStart() {
+          try{
+            let name = document.getElementById("empty");
+            let name1 = await fetch("https://randomuser.me/api/?results=10");
+            let name2 = await name1.json();
+            let user =name2.results[0];
+
+            let username=`${user.name.title}.${user.name.first} ${user.name.last}`;
+            let user1=user.gender;
+            name.innerHTML=`<h3>${username}</h3> <p>${user1}</p>`
+          }
+          catch(error){
+
+          }
+            
+        }
+
+    </script>
+     <div>
+        <button onclick="getStart()">Change</button>
+    </div> 
+</body>
+</html>

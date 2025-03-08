@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label , input  {
+            display: block;
+            color: azure;
+        }
+        .main1{
+           
+            position: relative;
+        }
+        .main1 img{
+            position: relative;
+            width: 100vw;
+            height: 80vw;
+        }
+        .main2{
+            position: absolute;
+            align-items: center;
+            padding: 100px;
+            left: 500px;
+           
+        }
+        .main2 ,form{
+            margin: opx;
+            top: 400px;
+        }
+        .main2 label{
+            color: black;
+            padding: 10px;
+           
+        }
+        .main2 input{
+            border-radius: 10px;
+            color: black;
+
+        }
+        #su1{
+            position: absolute;
+            color:black;
+            border-radius: 10px;
+            top: 300px;
+        }
+        .main2 {
+            position: absolute;
+            padding: 100px;
+        }
+        .main2, span{
+            color:red;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <img src="https://m.media-amazon.com/images/I/71wE3kw7obL.jpg" alt="">
+        <div class="main2">
+            <form onsubmit=" return submitForm()">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <span id="a1"></span>
+                <label for="number">Numbet</label>
+                <input type="number" id="number">
+                <span id="a2"></span>
+                <label for="email">email</label>
+                <input type="email" id="email">
+                <span></span>
+                <input type="submit" id="su1">
+            </form>
+        </div>
+    </div>
+    <script>
+        function submitForm(){
+            let name = document.getElementById("name").value;
+            let number = document.getElementById("number").value;
+            let email = document.getElementById("email").value;
+        
+        if(name== ""){
+
+            document.getElementById("a1").innerHTML="Enter the name";
+            return false;
+        }
+        else{
+            document.getElementById("a1").innerHTML=""
+        }
+        if(number== ""){
+            document.getElementById("a2").innerHTML="enter the number";
+            return false;
+        }
+        else{
+            document.getElementById("a2").innerHTML=""
+        }
+        if(email===""){
+            document.getElementById("a3").innerHTML="enter the email"
+            return false;
+        }
+        alert("fore submite")
+        return true;
+
+    }
+    </script>
+
+</body>
+</html>

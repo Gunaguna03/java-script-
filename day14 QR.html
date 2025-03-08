@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Thala{
+            constructor(name,role){
+                this.name=name;
+                this.role=role;
+            }
+            hitting(){
+                document.write(`The name is ${this.name},he is ${this.role} <br>` )
+            }
+        }
+        let batsman= new Thala('Thala','Finisher')
+        batsman.hitting()
+        let batsman1=new Thala(`chaptain`,`goat`)
+        batsman1.hitting()
+        
+    </script>
+    
+</body>
+</html>

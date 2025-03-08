@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main{
+            background-color: wheat;
+            width: 45%;
+            font-size: xx-large;
+            margin-top: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .main input{
+            width: 300px;
+            height: 30px;
+            border-radius: 20px;
+            
+        }
+        #y{
+            width: 40px;
+            height: 25px;
+        }
+        button{
+            width: 70px;
+            height: 40px;
+            background-color: black;
+            font-size: large;
+            color: azure;
+            border-radius: 10px;
+            
+        }
+        .main td{
+            padding-bottom: 30px;
+        }
+        body{
+            background-color: blue;
+        }
+        .main2{
+            position: absolute;
+            right: 60px;
+            color: black;
+            top: 200px;
+           
+        }
+    </style>
+</head>
+<body class="b">
+    <div class="main">
+        <h1>Login form</h1>
+       <form action="">
+        <table>
+            <tr>
+                <td><label for=""><b>Name</b></label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+               <td> <label for=""><b>Number</b></label></td>
+               <td> <input type="number"></td>
+            </tr>
+            <tr>
+                <td> <label for=""><b>email</b></label></td>
+                <td> <input type="text"></td>
+             </tr>
+             <tr>
+                <td> <label for=""><b>Control</b></label></td>
+                <td> <input type="radio" name="1"id="y">yes<input type="radio" name="1"id="y" >No</td>
+             </tr>
+             <tr>
+               <td> <button><b>submit</b></button></td>
+             </tr>
+        </table>
+
+       </form>
+    </div>
+    <div class="main2">
+        <p id="main1"></p>
+       </div>
+    </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement({pagelanguage:'eng'},'main1');
+        }
+    </script>
+       
+
+
+</body>
+</html>
