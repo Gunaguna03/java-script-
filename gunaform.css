@@ -1,0 +1,91 @@
+.value1{
+    color: azure;
+    top: 10px;
+    color: pink;
+    font-size: large;
+   
+   
+
+}
+.value h1{
+    position: absolute;
+    margin: 10px;
+    left: 600px;
+}
+.value{
+    background: linear-gradient(135deg, #2c003e11, #8e00a4);
+    width: 99vw;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(143, 62, 75);
+    display: none;
+    margin-top: 0px;
+}
+.value2{
+    background-color:rgb(255, 234, 234);
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+    left: 150px;
+    top: 70px;
+    border-radius: 20px;
+    border: pink solid;
+}
+.value2 h1{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 430px;
+    height: 10px;
+    font-size: 50px;
+}
+.value2 p{
+    position: absolute;
+    height: 20px;
+    width: 500px;
+    top: 230px;
+    left: 100px;
+}
+.value2 button{
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    width: 150px;
+    height: 30px;
+    background-color: burlywood;
+}
+#use{
+    position: absolute;
+    top: 400px;
+    left: 200px;
+
+}
+.value2 td{
+    padding: 30px;
+}
+.value2 tr{
+    position: absolute;
+    left: 50px;
+}
+.value2 input{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 250px;
+    height: 30px;
+    background-color: rgba(222, 184, 135, 0.671);
+}.value2 img{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 650px;
+    top: 150px;
+} 
+.end{
+    position: absolute;
+    top: 10px;
+}
+.about,td:hover{
+    background-color: rgba(255, 192, 203, 0.178);
+    color:blue;
+}
