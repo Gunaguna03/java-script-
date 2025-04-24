@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gunaform.css">
+    <link rel="stylesheet" href="passwords.css">
+    <style>
+        .main img{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        .main2{
+            position: absolute;
+            top: 100px;
+            /* left: 90vh; */
+            align-items: center;
+           
+        }
+        .main2 form{
+            display: flex;
+            flex-direction: column;
+           
+           
+
+        }
+        .main1{ 
+            position: absolute;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           z-index: 1;
+           top: 100px;
+           left: 50vw;  
+        }
+        .main1{
+            background-color: rgba(0, 0, 0, 0.247);
+            display: flex;
+            width: 500px;
+            height: 450px;
+            position: absolute;
+            left: 400px;
+            border-radius: 10px;
+        }
+        #h1{
+            position: absolute;
+            top: 2px;
+            color: white;  
+        }
+        .main2 input{
+            padding: 10px;
+            width: 300px;
+            background-color: rgba(0, 0, 255, 0);
+            border-radius: 10px;
+            color: white;
+            
+        }
+        #login {
+            position: absolute;
+            top: 230px;
+            left: 60px;
+            height: 50px;
+            width: 200px;
+            font-size: large;
+            border-radius: 10px;
+        }
+        #login:hover{
+            background-color: brown;
+            color: azure;
+        }
+        #for{
+            position: absolute;
+        }
+        #password{
+            position: absolute;
+            top: 130px;
+           
+        }
+        #email{
+            position: absolute;
+            top: 70px;
+        }
+        #for{
+            position: absolute;
+            right: 20px;
+            top: 178px;
+            color:white;
+        }
+        .main1 label{
+            position: absolute;
+            top: 190px;
+            color:white;
+        }
+        #chec{
+            position: absolute;
+            top: 190px;
+            right: 180px;
+           
+        }
+        #dont{
+            position: absolute;
+            top: 290px;
+            left: 45px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/049/547/613/small_2x/stunning-high-resolution-nature-and-landscape-backgrounds-breathtaking-scenery-in-hd-photo.jpg" alt="" style="filter: brightness(40%);">
+        <div class="main1" id="b">
+            <h1 id="h1">Login Form</h1>
+            <div class="main2" >
+                <form action="http://localhost:3000/data" method="post">
+                   <input type="text" placeholder="Enter your Name" name="Name">
+                   <input type="email" placeholder="Enter your Email" id="email">
+                   <input type="password" placeholder="Enter your Password" id="password" name="Number">
+                   <label for=""><b>Remember me</b></label>
+                   <input type="checkbox" id="chec">
+                </form> 
+                <button id="login" onclick="getStart()">Log in</button>
+                <p id="for" onclick="getValue()"><b >Forgot password</b></p>
+                <p id="dont" ><b>Dont'have an accound? Regiester</b></p>
+            </div>
+
+        </div>
+    </div>
+   <div class="end">
+    <div class="value" id="a">
+        <div class="value2">
+            <h1>SHOP ON YOUR WEBSITE</h1>
+            <p>This is a mistake. Here, we’ll refer to some time-honored typesetting conventions, 
+                with an emphasis on readability,
+                and offer guidance on adapting them effectively for devices and screens. </p>
+            <button>20% DISCOUND</button>
+            <p id="use">USE CODE:SHOP20</p>
+            <table>
+                <input type="search" placeholder="   Search">
+               <div class="about">
+                <tr>
+                    <td>Home</td>
+                    <td>Map</td>
+                    <td>About As</td>
+                    <td>Photo</td>
+                    <td>Menu</td>
+                </tr>
+               </div>
+                <img src="https://cdn-icons-png.flaticon.com/512/925/925009.png" alt="">
+            </table>
+            
+            <div class="value1">
+            </div>
+        </div>
+    </div>
+    <script>
+        function getStart(){
+            document.getElementById("a").style.display='block'
+            document.getElementById("b").style.display='none'
+            document.getElementById("c").style.display="none"   
+        }
+    </script>
+   </div>
+   <div class="modde" >
+    <div class="mode" id="c">
+        <div class="mode1">
+            <h1>Forgot your Password</h1>
+            <p>Enter your email address and we will send you 
+                  instuction to reset your password
+            </p>
+            <input type="email" placeholder="Enter your Email">
+            <button><b>Continue</b></button>
+            <p id="back">Back to log in</p>
+    
+        </div>
+       </div>
+   </div>
+   <script>
+      function getValue(){
+               document.getElementById("c").style.display="block"
+                document.getElementById("b").style.display='none'
+    }
+   </script>
+</body>
+</html>
